@@ -1,183 +1,187 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Domine', serif;
-    }
-    
-    body {
-        background-color: aquamarine;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-    }
-    /* ...............MainContainer............................ */
-    
-    .container {
-        position: relative;
-        width: 100%;
-        max-width: 1000px;
-        min-height: 1000px;
-        margin: 50px;
-        background-color: white;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        box-shadow: 0 35px 55px rgb(73, 84, 133);
-    }
-    /* ........................Left............................ */
-    
-    .container .left {
-        position: relative;
-        background-color: #2234ae;
-        background-image: linear-gradient(205deg, #2234ae 0%, #191714 74%);
-        padding: 40px;
-    }
-    
-    .profiledata {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 20px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    
-    .profiledata .imgbox {
-        position: relative;
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
-        overflow: hidden;
-    }
-    
-    .profiledata .imgbox img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        ;
-    }
-    
-    .profiledata h2 {
-        color: white;
-        font-size: 1.5em;
-        margin-top: 20px;
-        text-transform: uppercase;
-        text-align: center;
-        font-weight: 600;
-        line-height: 1.4em;
-    }
-    
-    .profiledata h2 span {
-        font-size: 0.8em;
-        font-weight: 300;
-    }
-    
-    .contactinfo {
-        padding-top: 40px;
-    }
-    
-    .title {
-        color: beige;
-        text-transform: uppercase;
-        font-weight: 600;
-        letter-spacing: 1px;
-        margin-bottom: 20px;
-    }
-    
-    .contactinfo ul {
-        position: relative;
-    }
-    
-    .contactinfo ul li {
-        position: relative;
-        list-style: none;
-        margin: 10px 0;
-        cursor: pointer;
-    }
-    
-    .contactinfo ul li .icon {
-        display: inline-block;
-        width: 30px;
-        font-size: 18px;
-        color: #03a9f4;
-    }
-    
-    .contactinfo ul li span {
-        color: white;
-        font-weight: 400;
-    }
-    
-    .qual li {
-        margin-bottom: 15px;
-    }
-    
-    .qual h5 {
-        color: wheat;
-        font-family: fantasy;
-        font-weight: 500;
-    }
-    
-    .qual h4:nth-child(2) {
-        color: white;
-        font-weight: 500;
-        letter-spacing: 1px;
-    }
-    
-    .qual h4:nth-child(3) {
-        color: white;
-        font-family: cursive;
-        font-size: 22px;
-        font-weight: 300;
-    }
-    /* ------------------------------------Right------------------------------------------------  */
-    
-    .container .right {
-        position: relative;
-        background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
-        padding: 40px;
-    }
-    
-    .about {
-        margin-bottom: 50px;
-    }
-    
-    .about:last-child {
-        margin-bottom: 0;
-    }
-    
-    .title2 {
-        color: #003147;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        margin-bottom: 10px;
-    }
-    
-    p {
-        color: #333;
-    }
-    
-    .about .box {
-        display: flex;
-        flex-direction: row;
-        margin: 20px 0;
-    }
-    
-    .about .box .yearcomp {
-        min-width: 150px;
-    }
-    
-    .about .box .yearcomp h5 {
-        text-transform: uppercase;
-        color: rgb(15, 49, 2);
-        font-weight: 600;
-    }
-    
-    .about .box .text h4 {
-        text-transform: uppercase;
-        color: rgb(9, 44, 126);
-        font-size: 16px;
-    }
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Domine", serif;
+}
+
+body {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+/* ...............MainContainer............................ */
+
+#devv {
+  font-family: "Courgette", cursive;
+  color: #b8c6db;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  margin: 50px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0 35px 55px rgb(73, 84, 133);
+}
+/* ........................Left............................ */
+
+.container .left {
+  position: relative;
+  background-color: #2234ae;
+  background-image: linear-gradient(205deg, #2234ae 0%, #191714 74%);
+  padding: 40px;
+}
+
+.profiledata {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profiledata .imgbox {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profiledata .imgbox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.profiledata h2 {
+  color: white;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.profiledata h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.contactinfo {
+  padding-top: 40px;
+}
+
+.title {
+  color: beige;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contactinfo ul {
+  position: relative;
+}
+
+.contactinfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.contactinfo ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+
+.contactinfo ul li span {
+  color: white;
+  font-weight: 400;
+}
+
+.qual li {
+  margin-bottom: 15px;
+}
+
+.qual h5 {
+  color: wheat;
+  font-family: fantasy;
+  font-weight: 500;
+}
+
+.qual h4:nth-child(2) {
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.qual h4:nth-child(3) {
+  color: white;
+  font-family: cursive;
+  font-size: 22px;
+  font-weight: 300;
+}
+/* ------------------------------------Right------------------------------------------------  */
+
+.container .right {
+  position: relative;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  padding: 40px;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about:last-child {
+  margin-bottom: 0;
+}
+
+.title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #333;
+}
+
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.about .box .yearcomp {
+  min-width: 150px;
+}
+
+.about .box .yearcomp h5 {
+  text-transform: uppercase;
+  color: rgb(15, 49, 2);
+  font-weight: 600;
+}
+
+.about .box .text h4 {
+  text-transform: uppercase;
+  color: rgb(9, 44, 126);
+  font-size: 16px;
+}
