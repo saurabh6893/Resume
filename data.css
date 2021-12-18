@@ -54,6 +54,10 @@ body {
   width: 200px;
   border-radius: 50%;
   overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .profiledata .imgbox img {
@@ -185,3 +189,48 @@ p {
   color: rgb(9, 44, 126);
   font-size: 16px;
 }
+
+
+/* adding media querries - rohit kedar */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+ body{
+  background-image: linear-gradient(205deg, #08187e 0%, #13110f 74%);
+ }
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+ 
+    
+  }
+  .container .left{
+    width: 100%;
+  
+  }
+
+  .title2{
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-25%);
+  -webkit-transform: translateX(-25%);
+  -moz-transform: translateX(-25%);
+  -ms-transform: translateX(-25%);
+  -o-transform: translateX(-25%);
+  margin-bottom: 35px;
+}
+  }
+  
+  
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (max-width: 768px) {
+    .container{
+      margin: 50px 0px;
+    } 
+  }
+  
+  
+  
+  
