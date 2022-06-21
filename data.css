@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Domine", serif;
+  font-family: 'Domine', serif;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 /* ...............MainContainer............................ */
 
 #devv {
-  font-family: "Courgette", cursive;
+  font-family: 'Courgette', cursive;
   color: #b8c6db;
 }
 .container {
@@ -32,6 +33,15 @@ body {
 }
 /* ........................Left............................ */
 
+.crs h3 {
+  color: rgb(0, 143, 148);
+  margin: 15px 0 10px 0;
+}
+
+.crs ul li {
+  color: white;
+  margin: 10px;
+}
 .container .left {
   position: relative;
   background-color: #2234ae;
@@ -77,6 +87,10 @@ body {
   text-align: center;
   font-weight: 600;
   line-height: 1.4em;
+}
+
+.p2 {
+  margin-top: 10px;
 }
 
 .profiledata h2 span {
@@ -150,18 +164,20 @@ body {
 }
 
 .about {
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .about:last-child {
   margin-bottom: 0;
 }
 
+#ps,
 .title2 {
   color: #003147;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin: 30px 0 30px 0;
 }
 
 p {
@@ -177,6 +193,14 @@ p {
 .about .box .yearcomp {
   min-width: 150px;
 }
+.box h4 {
+  margin: 1%;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-family: 'Bree Serif', serif;
+}
 
 .about .box .yearcomp h5 {
   text-transform: uppercase;
@@ -189,48 +213,41 @@ p {
   color: rgb(9, 44, 126);
   font-size: 16px;
 }
-
+a {
+  text-decoration: none;
+}
 
 /* adding media querries - rohit kedar */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
- body{
-  background-image: linear-gradient(205deg, #08187e 0%, #13110f 74%);
- }
-  .container{
+  body {
+    background-image: linear-gradient(205deg, #08187e 0%, #13110f 74%);
+  }
+  .container {
     display: flex;
     flex-wrap: wrap;
     margin: 10px 0px;
- 
-    
   }
-  .container .left{
+  .container .left {
     width: 100%;
-  
   }
 
-  .title2{
-  position: relative;
-  top: 0;
-  left: 50%;
-  transform: translateX(-25%);
-  -webkit-transform: translateX(-25%);
-  -moz-transform: translateX(-25%);
-  -ms-transform: translateX(-25%);
-  -o-transform: translateX(-25%);
-  margin-bottom: 35px;
+  .title2 {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-25%);
+    -webkit-transform: translateX(-25%);
+    -moz-transform: translateX(-25%);
+    -ms-transform: translateX(-25%);
+    -o-transform: translateX(-25%);
+    margin-bottom: 35px;
+  }
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 50px 0px;
   }
-  
-  
-  
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (max-width: 768px) {
-    .container{
-      margin: 50px 0px;
-    } 
-  }
-  
-  
-  
-  
+}
