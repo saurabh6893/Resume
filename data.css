@@ -217,6 +217,12 @@ a {
   text-decoration: none;
 }
 
+.frontend {
+  box-shadow: -1px 10px 40px 0 rgba(0, 49, 71, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
 /* adding media querries - rohit kedar */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
